@@ -8,7 +8,7 @@ const crawler = async () => {
   process.exit(0)
 }
 
-crawler()
+// crawler()
 setInterval(() => {
   crawler()
 }, 1000 * 60 * 60 * 24);

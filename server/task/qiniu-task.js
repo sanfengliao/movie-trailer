@@ -68,7 +68,6 @@ const qiniuTask = async () => {
             if (posterData && posterData.key) {
                 movie.posterKey =  posterData.key
             }
-            console.log(movie)
             await movie.save()
         } catch (err) {
             console.log(err)
