@@ -6,7 +6,7 @@
       <div v-show="!hasTrailer">暂无影片预告片信息</div>
     </el-main>
     <el-aside>
-      <router-link to="/" style="text-align: center; font-size: 18px;">回到首页</router-link>        
+      <router-link to="/" class="back-to-home">回到首页</router-link>        
       <el-tabs class="tabs" v-model="activeName" @tab-click="handleSelect">
         <el-tab-pane label="关于本片" name="1" class="movie-info">
           <div v-if="movie._id">
@@ -180,13 +180,27 @@ export default {
   height: 100%;
 }
 
+.back-to-home {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+  border: 1px solid #eee;
+}
+
+.back-to-home:hover {
+  color: #409EFF;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+
 .tabs {
   padding: 0 20px;
 }
 
 .panel-content {
   overflow: auto;
-  max-height: 600px;
+  max-height: 500px;
 }
 
 .movie-info .movie-title {
