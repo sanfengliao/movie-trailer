@@ -11,7 +11,7 @@
 puppeteer是一个Node.js库, 封装了大量的高级API来调用Chrome DevTools开放的接口来操作网页, 它操作Dom时完全在内存中进行而不打开浏览器, 所以我们可以使用puppeteer来爬取视频信息
 npm安装: https://www.npmjs.com/package/puppeteer
 
-我们爬取豆瓣最新上映的电影的信息: https://movie.douban.com/tag/#/?sort=R&range=0,10&tags=
+我们爬取豆瓣即将上映的电影的信息: https://movie.douban.com/tag/#/?sort=R&range=0,10&tags=
 
 `trailer-movie-list.js`
 

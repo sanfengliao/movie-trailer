@@ -6,7 +6,7 @@
       <div v-show="!hasTrailer">暂无影片预告片信息</div>
     </el-main>
     <el-aside>
-      <router-link to="/" class="back-to-home">回到首页</router-link>        
+      <div @click="$router.go(-1)" class="back-to-home">回到首页</div>        
       <el-tabs class="tabs" v-model="activeName" @tab-click="handleSelect">
         <el-tab-pane label="关于本片" name="1" class="movie-info">
           <div v-if="movie._id">
